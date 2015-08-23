@@ -26,10 +26,6 @@ sub gauss_sum_mod
     my $sum = $m->copy()->bmul( gauss_sum( $n->copy->bsub(1)->bdiv($m) ) );
 
     return $sum;
-
-    return gauss_sum($_[0]);
-
-    gauss_sum( floor(($_[0]-1)/$_[1]) ) * $_[1]
 }
 
 my $sum3 = gauss_sum_mod($n,Math::BigInt->new(3));
