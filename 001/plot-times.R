@@ -2,7 +2,7 @@
 times <- read.csv("/home/kfor/projects/euler/001/times.csv", header=T)
 
 png(filename = "times.png",
-    width = 640, height = 640, units = "px", pointsize = 12,
+    width = 1024, height = 1024, units = "px", pointsize = 12,
     bg = "white", res = NA,
     type = c("cairo", "cairo-png", "Xlib", "quartz"))
 
